@@ -1,0 +1,14 @@
+masters-thesis-project
+abstract
+questions
+objectives
+db_structure
+database-structure
+forming-the-database
+base-format
+sort-into-different-datasets
+individuals-dataset
+collar-dataset
+location-dataset
+deployment-dataset
+rsqlite
