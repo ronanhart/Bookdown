@@ -12,13 +12,13 @@ To best structure all of my data, I will be storing my datasets into a database.
   + Snow depth
 
 ```{r dir_pic, echo = FALSE, fig.align = 'center', fig.cap = "Directory Structure", out.width = "70%"}
-knitr::include_graphics("../Database/Directory Structure.png")
+knitr::include_graphics("Pictures/Directory Structure.png")
 ```
   
 The above picture shows my directory structure for this project. This directory reflects an Activity-based organization, with all the code stored in one folder, all the data stored in one folder, etc.
   
 ```{r db_pic, echo = FALSE, fig.align = 'center', fig.cap = "Database Structure", out.width = "90%"}
-knitr::include_graphics("../Database/Database_Structure.jpg")
+knitr::include_graphics("Pictures/Database_Structure.jpg")
 ```
 
 The above picture shows my database structure. Most of this database is of the GPS data from collared animals. The majority of data of barriers and environmental covariates will be in the form of shapefiles or rasters, and so were not included in this database structure.
@@ -29,7 +29,7 @@ The above picture shows my database structure. Most of this database is of the G
 Before I can begin working in RSQLite, I have to first format my raw data into a structure matching my planned structure above.
 
 ```{r raw_dat_pic, echo = FALSE, fig.align = 'center', fig.cap = "Column Names of Raw Data", out.width = "100%"}
-knitr::include_graphics("../Database/colnames.jpg")
+knitr::include_graphics("Pictures/colnames.jpg")
 ```
 
 To format my dataframes, I will be working with the packages `dplyr` -- which allows me to manipulate dataframes -- and `lubridate` -- which allows me to work with date and time formats.
@@ -52,7 +52,7 @@ library(lubridate)
 
 ```{r load_full, echo = TRUE, eval = TRUE}
 # Load Data ----
-df = read.csv("../Data/Raw/GPS/full_data.csv")
+df = read.csv("Data/full_data.csv")
 ```
 
 *Note: For the purposes of this demonstration, I have subset my data and randomized certain elements*
@@ -140,7 +140,7 @@ This table now shows our individual animals and their sex, species, birth year, 
 Now we can save this table for later. I'll save it as a .rds file so that it keeps the format and datatypes and so it takes up less disk space.
 
 ```{r write_indiv, echo = TRUE, eval = FALSE}
-saveRDS(indiv, "../Data/Processed/individual.rds")
+saveRDS(indiv, "Data/individual.rds")
 ```
 <br>
 
@@ -159,7 +159,7 @@ Now we have a table showing our animals and their collar IDs. In this subset of 
 I'll also save this as a .rds file
 
 ```{r write_collar, echo = TRUE, eval = FALSE}
-saveRDS(collar, "../Data/Processed/collar.rds")
+saveRDS(collar, "Data/collar.rds")
 ```
 <br>
 
@@ -249,7 +249,7 @@ Let's save this table, again as a .rds file.
 
 ```{r save_loc, echo = TRUE, eval = FALSE}
 # Save ----
-saveRDS(loc, "../Data/Processed/location.rds")
+saveRDS(loc, "Data/location.rds")
 ```
 <br>
 
@@ -288,7 +288,7 @@ print(deploy)
 
 
 ```{r save_deploy, echo = TRUE, eval = FALSE}
-saveRDS(deploy, "../Data/Processed/deployment.rds")
+saveRDS(deploy, "Data/deployment.rds")
 
 ```
 <br>
@@ -311,7 +311,7 @@ Once the package is installed and loaded, I can begin working in RSQLite. First,
 
 ```{r db, echo = TRUE, eval = TRUE}
 # Establish Database Connection ----
-db = dbConnect(drv = RSQLite::SQLite(), "../Data/barrier_proj.db")
+db = dbConnect(drv = RSQLite::SQLite(), "Data/barrier_proj.db")
 ```
 
 Then, I need to create the tables for all of my datasets. I need to create the `individuals` table first because it has no foreign key but its primary key (`animal_id`) is a foreign key for the other tables.
