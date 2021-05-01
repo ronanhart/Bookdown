@@ -1,7 +1,7 @@
 --- 
 title: "Master's Thesis Research"
 author: "Ronan Hart"
-date: "2021-03-04"
+date: "2021-04-26"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -14,27 +14,12 @@ description: "A recording of Ronan Hart's master's thesis project, from data col
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Master's Thesis Project
+# Introduction
 <p style = "font-weight: 600; font-size: 24px"> Quantifying the Impacts of Anthropogenic Movement Barriers on Ungulate Space-Use Patterns and Functional Connectivity in Utah</p>
 <br>
+  
+## Project Outline
 
-## Abstract
-Movement is an essential function for large herbivores to acquire resources and to avoid predation risk. The successful execution, and thus the functional value, of movement is dependent on the connectivity of the landscape. Impediments to movement, such as anthropogenic barriers, can impact space-use behaviors and cause functional habitat loss and fragmentation. Disruptions to landscape connectivity can increase mortality, block gene flow, increase a population’s vulnerability to extirpation, and compromise metapopulation persistence. Furthermore, because functional landscape connectivity is species- and context-dependent, it is necessary to be scrutinous and examine animal movement by multiple species and in a variety of spatial-temporal contexts to understand the full scope of barrier impacts on functional connectivity. To address this, our research will look at two ungulate species in Utah – mule deer (Odocoileus hemionus) and pronghorn (Antilocapra americana) – that share similar movement patterns and geographic space but require different ecological needs and reside in, and move through, different habitats. These two species provide a unique opportunity to compare their space-use shifts around barriers and therefore gain a holistic understanding of functional habitat loss in the many landscapes across Utah. I will use GPS-collar data provided by the Utah Division of Wildlife Resources (UDWR) to analyze individual movement with respect to roads, fences, landcover, vegetation, and snow depth using integrated step selection analysis (iSSA). I plan to provide a comprehensive picture of landscape connectivity in a variable landscape with multiple species.  This will give wildlife managers with essential tools to mitigate current barrier effects and aid in predicting impacts from future barrier construction.
-<br>
-
-## Questions
-I seek to answer four main questions
-
-1.	Do barriers impact pronghorn differently than they impact mule deer?
-2.	How do barrier impacts differ between seasons?
-3.	How do barrier impacts differ between individuals and populations exhibiting different movement patterns?
-4.	Do barrier impacts vary in different habitat types?
-<br>
-
-## Objectives
-1.	Determine the probability of crossing a barrier.  I will consider probability to be a function of species, barrier attributes traffic volume, number of lanes, fence type, and fence height), and the local environmental attributes (time of day, season, elevation, vegetation type and quality, and snow depth).
-2.	Quantify behavioral responses around roads and fences to estimate functional habitat loss due to proximity avoidance.
-3.	Develop maps showing habitat loss and fragmentation due to barrier impacts.
-4.	Develop maps of the relative probability of barrier crossing and avoidance given the environmental attributes of each point in the map.
-5.	Use these maps to determine where and when barriers cause the highest degradation, predict how future barrier construction could impact habitats, and predict how barrier modification could mitigate impacts.  
-<br>
+* [Chapter 2][Project Overview]: Project Overview
+* [Chapter 3][Database Structure]: Database Structure
+* [Chapter 4][Home Range Visualization]: Delineate and Visualize Home Ranges

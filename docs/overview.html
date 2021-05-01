@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Project Overview | Master’s Thesis Research</title>
+  <meta name="description" content="A recording of Ronan Hart’s master’s thesis project, from data collection to data analysis." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Project Overview | Master’s Thesis Research" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A recording of Ronan Hart’s master’s thesis project, from data collection to data analysis." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Project Overview | Master’s Thesis Research" />
+  
+  <meta name="twitter:description" content="A recording of Ronan Hart’s master’s thesis project, from data collection to data analysis." />
+  
+
+<meta name="author" content="Ronan Hart" />
+
+
+<meta name="date" content="2021-04-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="db-structure.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Ronan Hart's Final Project</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#project-outline"><i class="fa fa-check"></i><b>1.1</b> Project Outline</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>2</b> Project Overview</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="overview.html"><a href="overview.html#abstract"><i class="fa fa-check"></i><b>2.1</b> Abstract</a></li>
+<li class="chapter" data-level="2.2" data-path="overview.html"><a href="overview.html#research-question"><i class="fa fa-check"></i><b>2.2</b> Research Question</a></li>
+<li class="chapter" data-level="2.3" data-path="overview.html"><a href="overview.html#objectives"><i class="fa fa-check"></i><b>2.3</b> Objectives</a></li>
+<li class="chapter" data-level="2.4" data-path="overview.html"><a href="overview.html#hypotheses-and-predictions"><i class="fa fa-check"></i><b>2.4</b> Hypotheses and Predictions</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="db-structure.html"><a href="db-structure.html"><i class="fa fa-check"></i><b>3</b> Database Structure</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="db-structure.html"><a href="db-structure.html#database-structure"><i class="fa fa-check"></i><b>3.1</b> Database Structure</a></li>
+<li class="chapter" data-level="3.2" data-path="db-structure.html"><a href="db-structure.html#formatting-data"><i class="fa fa-check"></i><b>3.2</b> Formatting Data</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="db-structure.html"><a href="db-structure.html#base-format"><i class="fa fa-check"></i><b>3.2.1</b> Base Format</a></li>
+<li class="chapter" data-level="3.2.2" data-path="db-structure.html"><a href="db-structure.html#sort-into-different-datasets"><i class="fa fa-check"></i><b>3.2.2</b> Sort into Different Datasets</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="db-structure.html"><a href="db-structure.html#rsqlite"><i class="fa fa-check"></i><b>3.3</b> RSQLite</a></li>
+<li class="chapter" data-level="3.4" data-path="db-structure.html"><a href="db-structure.html#locoh-home-range-for-one-season"><i class="fa fa-check"></i><b>3.4</b> LoCoH Home Range for One Season</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="db-structure.html"><a href="db-structure.html#delineate-seasonal-locoh-hull"><i class="fa fa-check"></i><b>3.4.1</b> Delineate Seasonal LoCoH Hull</a></li>
+<li class="chapter" data-level="3.4.2" data-path="db-structure.html"><a href="db-structure.html#plot-home-range"><i class="fa fa-check"></i><b>3.4.2</b> Plot Home Range</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="db-structure.html"><a href="db-structure.html#locoh-home-range-for-all-seasons-in-all-years"><i class="fa fa-check"></i><b>3.5</b> LoCoH Home Range for all seasons in all years</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="db-structure.html"><a href="db-structure.html#home-range-area"><i class="fa fa-check"></i><b>3.5.1</b> Home Range Area</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Master’s Thesis Research</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="overview" class="section level1" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Project Overview</h1>
+<div id="abstract" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Abstract</h2>
+<p>Movement is an essential function for large herbivores to acquire resources and to avoid predation risk. The successful execution, and thus the functional value, of movement is dependent on the connectivity of the landscape. Impediments to movement, such as anthropogenic barriers, can impact space-use behaviors and cause functional habitat loss and fragmentation. Disruptions to landscape connectivity can increase mortality, block gene flow, increase a population’s vulnerability to extirpation, and compromise metapopulation persistence. Furthermore, because functional landscape connectivity is species- and context-dependent, it is necessary to be scrutinous and examine animal movement by multiple species and in a variety of spatial-temporal contexts to understand the full scope of barrier impacts on functional connectivity. To address this, my research will look at two ungulate species in Utah: mule deer (Odocoileus hemionus) and pronghorn (Antilocapra americana). These animals share similar movement patterns and geographic space but require different ecological needs and reside in and move through different habitats. These two species provide a unique opportunity to compare their space-use shifts around barriers and therefore gain a holistic understanding of functional habitat loss in the many landscapes across Utah. I will use GPS-collar data provided by the Utah Division of Wildlife Resources (UDWR) to analyze individual movement with respect to roads, fences, landcover, vegetation, and snow depth using integrated step selection analysis (iSSA) – a statistical tool used to evaluate habitat selection and movement behaviors. To better understand connectivity, I will integrate the probability of where the animal is likely to be – proximity effects – with the probability of where the animal is likely to cross a barrier – crossing effects. With iSSA, I will determine the relative probability of an animal using a certain area of a certain habitat type, given that the animal is near that area. With these probability results, I will create prediction maps: one showing where a pronghorn or mule deer is likely to be and likely to cross barriers and another showing where a pronghorn or mule deer is likely to be but are not crossing barriers. With these maps, I will then create a third map showing functional habitat loss in Utah due to barriers by multiplying the probability of avoidance with the probability of crossing, given barrier type and surrounding habitat. My objectives are to (1) quantify and compare the behavioral responses of pronghorn and mule deer when they are in the proximity of barriers of various types, (2) estimate landscape connectivity and functional habitat loss based on these space-use behavior shifts, (3) develop models and maps of the relative probability of barrier crossing and avoidance given the environmental attributes of each point in the map, and (4) determine where and when barriers cause the highest degradation and how future barrier construction could impact functional connectivity. With these objectives, I plan to provide a comprehensive picture of landscape connectivity in a variable landscape with multiple species. This will give wildlife managers with essential tools to mitigate current barrier effects and aid in predicting impacts from future barrier construction.</p>
+</div>
+<div id="research-question" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Research Question</h2>
+<p>What causes a variation in space-use patterns in response to barriers?</p>
+</div>
+<div id="objectives" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Objectives</h2>
+<ul>
+<li>Determine the probability of crossing a barrier. I will consider probability to be a function of species, barrier attributes (traffic volume, number of lanes, fence type, and fence height), and the local environmental attributes (time of day, season, elevation, vegetation type and quality, and snow depth).</li>
+<li>Quantify behavioral responses around roads and fences to estimate functional habitat loss due to proximity avoidance.</li>
+<li>Develop maps showing habitat loss and fragmentation due to barrier impacts.</li>
+<li>Develop maps of the relative probability of barrier crossing and avoidance given the environmental attributes of each point in the map.</li>
+<li>Use these maps to determine where and when barriers cause the highest degradation, predict how future barrier construction could impact habitats, and predict how barrier modification could mitigate impacts.</li>
+</ul>
+</div>
+<div id="hypotheses-and-predictions" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Hypotheses and Predictions</h2>
+<p>An anthropogenic barrier’s impact on an animal’s space-use behavior is a function of the animal’s species, attributes of the barrier, and attributes of the local environment.</p>
+<ol style="list-style-type: decimal">
+<li>Barrier type and attributes affect permeability and/or risk factors, which then affects probability of crossing and probability of avoidance.
+<ol style="list-style-type: lower-roman">
+<li>A road with a higher number of lanes and/or high traffic volume will cause a decrease in crossing probability and increase in probability of avoidance</li>
+<li>A fence with a higher top wire and/or lower bottom wire will cause a decrease in crossing probability</li>
+</ol></li>
+<li>An individual who encounters barriers at a higher rate will show reduced response to barriers.
+<ol style="list-style-type: lower-roman">
+<li>Because barriers are more likely to be constructed in low-elevation landscapes and/or landscapes with low ruggedness, individuals who reside or move through these landscapes (such as pronghorn or residents of low-elevation ranges) are more likely to encounter barriers and thus have a higher probability of crossing and lower probability of avoidance.</li>
+<li>An individual pronghorn or mule deer who moves more (due to e.g. migration or low habitat productivity) is more likely to encounter barriers and thus have a higher probability of crossing and</li>
+</ol></li>
+<li>An individual’s response to barriers is context-dependent: resources, conditions, and risk at the time and place an individual encounters the barrier will affect the individual’s propensity to be near and/or cross the barrier.
+<ol style="list-style-type: lower-roman">
+<li>In habitats with high predator density, or in times of high predation risk, pronghorn are more likely to avoid barrier proximity, which may compromise their antipredation strategy of high vigilance and speed.</li>
+<li>Deep snow will make crossing barriers more difficult, hence both species are expected to be less likely to cross barriers where snow is deep.</li>
+<li>Resource gradients across the two sides of the barrier is expected to be positively correlated with crossing probability.</li>
+<li>Resource quality near the barrier is expected to be negatively correlated with probability of proximity avoidance.</li>
+</ol></li>
+</ol>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="db-structure.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Bookdown.pdf", "Bookdown.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

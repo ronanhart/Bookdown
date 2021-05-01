@@ -1,0 +1,33 @@
+# Project Overview {#overview}
+
+## Abstract
+Movement is an essential function for large herbivores to acquire resources and to avoid predation risk. The successful execution, and thus the functional value, of movement is dependent on the connectivity of the landscape. Impediments to movement, such as anthropogenic barriers, can impact space-use behaviors and cause functional habitat loss and fragmentation. Disruptions to landscape connectivity can increase mortality, block gene flow, increase a population’s vulnerability to extirpation, and compromise metapopulation persistence. Furthermore, because functional landscape connectivity is species- and context-dependent, it is necessary to be scrutinous and examine animal movement by multiple species and in a variety of spatial-temporal contexts to understand the full scope of barrier impacts on functional connectivity. To address this, my research will look at two ungulate species in Utah: mule deer (Odocoileus hemionus) and pronghorn (Antilocapra americana). These animals share similar movement patterns and geographic space but require different ecological needs and reside in and move through different habitats. These two species provide a unique opportunity to compare their space-use shifts around barriers and therefore gain a holistic understanding of functional habitat loss in the many landscapes across Utah. I will use GPS-collar data provided by the Utah Division of Wildlife Resources (UDWR) to analyze individual movement with respect to roads, fences, landcover, vegetation, and snow depth using integrated step selection analysis (iSSA) – a statistical tool used to evaluate habitat selection and movement behaviors. To better understand connectivity, I will integrate the probability of where the animal is likely to be – proximity effects – with the probability of where the animal is likely to cross a barrier – crossing effects. With iSSA, I will determine the relative probability of an animal using a certain area of a certain habitat type, given that the animal is near that area. With these probability results, I will create prediction maps: one showing where a pronghorn or mule deer is likely to be and likely to cross barriers and another showing where a pronghorn or mule deer is likely to be but are not crossing barriers. With these maps, I will then create a third map showing functional habitat loss in Utah due to barriers by multiplying the probability of avoidance with the probability of crossing, given barrier type and surrounding habitat. My objectives are to (1) quantify and compare the behavioral responses of pronghorn and mule deer when they are in the proximity of barriers of various types, (2) estimate landscape connectivity and functional habitat loss based on these space-use behavior shifts, (3) develop models and maps of the relative probability of barrier crossing and avoidance given the environmental attributes of each point in the map, and (4) determine where and when barriers cause the highest degradation and how future barrier construction could impact functional connectivity. With these objectives, I plan to provide a comprehensive picture of landscape connectivity in a variable landscape with multiple species.  This will give wildlife managers with essential tools to mitigate current barrier effects and aid in predicting impacts from future barrier construction.
+
+## Research Question
+What causes a variation in space-use patterns in response to barriers?
+
+## Objectives
+
+* Determine the probability of crossing a barrier.  I will consider probability to be a function of species, barrier attributes (traffic volume, number of lanes, fence type, and fence height), and the local environmental attributes (time of day, season, elevation, vegetation type and quality, and snow depth).
+* Quantify behavioral responses around roads and fences to estimate functional habitat loss due to proximity avoidance.
+* Develop maps showing habitat loss and fragmentation due to barrier impacts.
+* Develop maps of the relative probability of barrier crossing and avoidance given the environmental attributes of each point in the map.
+* Use these maps to determine where and when barriers cause the highest degradation, predict how future barrier construction could impact habitats, and predict how barrier modification could mitigate impacts.  
+
+## Hypotheses and Predictions
+
+An anthropogenic barrier’s impact on an animal’s space-use behavior is a function of the animal’s species, attributes of the barrier, and attributes of the local environment.
+
+1. Barrier type and attributes affect permeability and/or risk factors, which then affects probability of crossing and probability of avoidance.
+    i) A road with a higher number of lanes and/or high traffic volume will cause a decrease in crossing probability and increase in probability of avoidance
+    ii) A fence with a higher top wire and/or lower bottom wire will cause a decrease in crossing probability
+
+2. An individual who encounters barriers at a higher rate will show reduced response to barriers.
+    i) Because barriers are more likely to be constructed in low-elevation landscapes and/or landscapes with low ruggedness, individuals who reside or move through these landscapes (such as pronghorn or residents of low-elevation ranges) are more likely to encounter barriers and thus have a higher probability of crossing and lower probability of avoidance.
+    ii) An individual pronghorn or mule deer who moves more (due to e.g. migration or low habitat productivity) is more likely to encounter barriers and thus have a higher probability of crossing and
+
+3. An individual’s response to barriers is context-dependent: resources, conditions, and risk at the time and place an individual encounters the barrier will affect the individual’s propensity to be near and/or cross the barrier.
+    i) In habitats with high predator density, or in times of high predation risk, pronghorn are more likely to avoid barrier proximity, which may compromise their antipredation strategy of high vigilance and speed.
+    ii) Deep snow will make crossing barriers more difficult, hence both species are expected to be less likely to cross barriers where snow is deep.
+    iii) Resource gradients across the two sides of the barrier is expected to be positively correlated with crossing probability.
+    iv) Resource quality near the barrier is expected to be negatively correlated with probability of proximity avoidance.
