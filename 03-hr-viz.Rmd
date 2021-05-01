@@ -11,8 +11,6 @@ A home range is defined as "the area an animal normally travels" (Burt, 1943), o
 
 LoCoH -- or Local Convex Hull -- differs from other home range UDs in that it shows gaps and sharp boundaries of the animal's movement. This is useful for my research because I can see if the home range shape is affected by linear features -- such as if it runs parallel to a barrier.
 
-
-
 ### Objectives
 My objective for this code is to delineate and plot the LoCoH home range for every season of every year for every individual. I also want to plot a boxplot of the estimated areas of that year's home ranges.
 

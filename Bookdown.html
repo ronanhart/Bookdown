@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Master’s Thesis Research</title>
+  <meta name="description" content="A recording of Ronan Hart’s master’s thesis project, from data collection to data analysis." />
+  <meta name="generator" content="bookdown #bookdown:version# and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Master’s Thesis Research" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A recording of Ronan Hart’s master’s thesis project, from data collection to data analysis." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Master’s Thesis Research" />
+  
+  <meta name="twitter:description" content="A recording of Ronan Hart’s master’s thesis project, from data collection to data analysis." />
+  
+
+<meta name="author" content="Ronan Hart" />
+
+
+<meta name="date" content="2021-04-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<!--bookdown:link_prev-->
+<!--bookdown:link_next-->
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+<!--bookdown:title:start-->
+<div id="header">
+<h1 class="title">Master’s Thesis Research</h1>
+<p class="author"><em>Ronan Hart</em></p>
+<p class="date"><em>2021-04-26</em></p>
+</div>
+<!--bookdown:title:end-->
+
+<!--bookdown:toc:start-->
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+<!--bookdown:toc2:start-->
+<ul>
+<li><a href="#introduction"><span class="toc-section-number">1</span> Introduction</a>
+<ul>
+<li><a href="#project-outline"><span class="toc-section-number">1.1</span> Project Outline</a></li>
+</ul></li>
+<li><a href="#overview"><span class="toc-section-number">2</span> Project Overview</a>
+<ul>
+<li><a href="#abstract"><span class="toc-section-number">2.1</span> Abstract</a></li>
+<li><a href="#research-question"><span class="toc-section-number">2.2</span> Research Question</a></li>
+<li><a href="#objectives"><span class="toc-section-number">2.3</span> Objectives</a></li>
+<li><a href="#hypotheses-and-predictions"><span class="toc-section-number">2.4</span> Hypotheses and Predictions</a></li>
+</ul></li>
+<li><a href="#db_structure"><span class="toc-section-number">3</span> Database Structure</a>
+<ul>
+<li><a href="#database-structure"><span class="toc-section-number">3.1</span> Database Structure</a></li>
+<li><a href="#formatting-data"><span class="toc-section-number">3.2</span> Formatting Data</a>
+<ul>
+<li><a href="#base-format"><span class="toc-section-number">3.2.1</span> Base Format</a></li>
+<li><a href="#sort-into-different-datasets"><span class="toc-section-number">3.2.2</span> Sort into Different Datasets</a></li>
+</ul></li>
+<li><a href="#rsqlite"><span class="toc-section-number">3.3</span> RSQLite</a></li>
+</ul></li>
+</ul>
+<!--bookdown:toc2:end-->
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Master’s Thesis Research</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!--bookdown:toc:end-->
+<!--bookdown:body:start-->
+<div id="introduction" class="section level1" number="1">
+<h1 number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p style="font-weight: 600; font-size: 24px">
+Quantifying the Impacts of Anthropogenic Movement Barriers on Ungulate Space-Use Patterns and Functional Connectivity in Utah
+</p>
+<p><br></p>
+<div id="project-outline" class="section level2" number="1.1">
+<h2 number="1.1"><span class="header-section-number">1.1</span> Project Outline</h2>
+<ul>
+<li><a href="#overview">Chapter 2</a>: Project Overview</li>
+<li><a href="#database-structure">Chapter 3</a>: Database Structure</li>
+<li>[Chapter 4][Home Range Visualization]: Delineate and Visualize Home Ranges</li>
+</ul>
+<!--chapter:end:index.Rmd-->
+</div>
+</div>
+<div id="overview" class="section level1" number="2">
+<h1 number="2"><span class="header-section-number">2</span> Project Overview</h1>
+<p>Placeholder</p>
+<div id="abstract" class="section level2" number="2.1">
+<h2 number="2.1"><span class="header-section-number">2.1</span> Abstract</h2>
+</div>
+<div id="research-question" class="section level2" number="2.2">
+<h2 number="2.2"><span class="header-section-number">2.2</span> Research Question</h2>
+</div>
+<div id="objectives" class="section level2" number="2.3">
+<h2 number="2.3"><span class="header-section-number">2.3</span> Objectives</h2>
+</div>
+<div id="hypotheses-and-predictions" class="section level2" number="2.4">
+<h2 number="2.4"><span class="header-section-number">2.4</span> Hypotheses and Predictions</h2>
+<!--chapter:end:01-overview.Rmd-->
+</div>
+</div>
+<div id="db_structure" class="section level1" number="3">
+<h1 number="3"><span class="header-section-number">3</span> Database Structure</h1>
+<div id="database-structure" class="section level2" number="3.1">
+<h2 number="3.1"><span class="header-section-number">3.1</span> Database Structure</h2>
+<p>To best structure all of my data, I will be storing my datasets into a database. My data will be in 3 main categories:</p>
+<ul>
+<li>GPS data from collared pronghorn and mule deer</li>
+<li>Barrier locations and attributes (roads, fences, railroads, etc.)</li>
+<li>Environmental covariates
+<ul>
+<li>Elevation</li>
+<li>Landcover</li>
+<li>Vegetation type and phenology</li>
+<li>Snow depth</li>
+</ul></li>
+</ul>
+<div class="figure" style="text-align: center">
+<img src="Pictures/Directory%20Structure.png" alt="Directory Structure" width="70%" />
+<p class="caption">
+(#fig:dir_pic)Directory Structure
+</p>
+</div>
+<p>The above picture shows my directory structure for this project. This directory reflects an Activity-based organization, with all the code stored in one folder, all the data stored in one folder, etc.</p>
+<div class="figure" style="text-align: center">
+<img src="Pictures/Database%20Structure.jpg" alt="Database Structure" width="90%" />
+<p class="caption">
+(#fig:db_pic)Database Structure
+</p>
+</div>
+<p>The above picture shows my database structure. This database is of the GPS data from collared animals. The majority of data of barriers and environmental covariates will be in the form of shapefiles or rasters, and so were not included in this database structure.
+<br></p>
+</div>
+<div id="formatting-data" class="section level2" number="3.2">
+<h2 number="3.2"><span class="header-section-number">3.2</span> Formatting Data</h2>
+<p>Before I can begin working in RSQLite, I have to first format my raw data into a structure matching my planned structure above.</p>
+<p>To format my dataframes, I will be working with the packages <code>dplyr</code> – which allows me to manipulate dataframes – and <code>lubridate</code> – which allows me to work with date and time formats.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;dplyr&quot;</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;lubridate&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span></code></pre></div>
+<p><br></p>
+<div id="base-format" class="section level3" number="3.2.1">
+<h3 number="3.2.1"><span class="header-section-number">3.2.1</span> Base Format</h3>
+<p>I need to:</p>
+<ol style="list-style-type: decimal">
+<li>Change the Date and Time column to class <code>POSIXct</code> instead of <code>character</code>. I can do this using <code>lubridate</code>’s function <code>ymd_hms()</code></li>
+<li>Change the mortality column to class <code>logical</code>, since the values are either <code>TRUE</code> or <code>FALSE</code></li>
+<li>Change the Collar ID column. Some Collar ID records are a different character length, so some have a 0 in front while others do not. This makes it seem like there are more collars deployed than in reality. So I need to check the number of characters in the Collar ID column and add a 0 if there are too few.</li>
+<li>Remove quotes around Animal IDs. There is at least one Animal ID record that has quotes around it while the others do not, so I want to remove these quotes.</li>
+<li>Rename the columns to the name format I prefer and sort them into an order I feel is more useful. (This part is only for aesthetics and consistency for me)</li>
+</ol>
+<p>I’ve written all of these steps into a useable funciton, so all I need to do is plug in a dataframe as an argument and all of these formatting processes will happen at once.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>base_format <span class="ot">&lt;-</span> <span class="cf">function</span>(df){</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># CHANGE DATE</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># DateAndTime is character class, needs to be date</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;Changing date format...&quot;</span>, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>) <span class="co"># print so user knows what step</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">datetime =</span> lubridate<span class="sc">::</span><span class="fu">ymd_hms</span>(DateAndTime))</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># CHANGE MORTALITY</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Mortality is character class, change to logical</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;Changing mortality format...&quot;</span>, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>) <span class="co"># print so user knows what step</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">mort =</span> <span class="fu">as.logical</span>(Mortality))</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># CHANGE COLLAR ID</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Adds a 0 in front to make sure they&#39;re all the same length</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># removes the issue of duplicates where one collar ID had a 0 and one didn&#39;t</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;Changing collar ID format...&quot;</span>, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>) <span class="co"># print so user knows what step</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>      <span class="at">collar_id =</span> <span class="fu">case_when</span>(<span class="fu">nchar</span>(CollarID) <span class="sc">==</span> <span class="dv">5</span> <span class="sc">~</span> <span class="fu">paste0</span>(<span class="st">&quot;0&quot;</span>, CollarID),</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>                            <span class="fu">nchar</span>(CollarID) <span class="sc">==</span> <span class="dv">4</span> <span class="sc">~</span> <span class="fu">paste0</span>(<span class="st">&quot;00&quot;</span>, CollarID),</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>                            <span class="cn">TRUE</span> <span class="sc">~</span> CollarID)</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>  <span class="co"># REMOVING QUOTES</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>  <span class="co"># there&#39;s a record in AnimalID that has quotes around the id</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;Removing quotes...&quot;</span>, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>) <span class="co"># print so user knows what step</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">AnimalID =</span> <span class="fu">gsub</span>(<span class="at">x =</span> AnimalID, <span class="at">pattern =</span> <span class="st">&#39;&quot;&#39;</span>, <span class="at">replacement =</span> <span class="st">&quot;&quot;</span>))</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>  <span class="co"># SELECT COLUMNS</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>  <span class="co"># rename columns to more useful format, sort into better order</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;Sorting columns...&quot;</span>, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>) <span class="co"># print so user knows what step</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>            OBJECTID, </span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>            <span class="at">animal_id =</span> AnimalID,</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>            <span class="at">species =</span> Species,</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>            <span class="at">sex =</span> Sex,</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>            datetime,</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>            <span class="co"># added y and x so I can remember which one is which</span></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>            <span class="at">lat_y =</span> Latitude,</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>            <span class="at">lon_x =</span> Longitude,</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>            <span class="at">cohort =</span> CurrentCohort,</span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>            <span class="at">birth_year =</span> BirthYear,</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>            <span class="at">mortality =</span> mort,</span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>            <span class="at">capture_unit =</span> CaptureUnit,</span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>            collar_id,</span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>            <span class="at">freq =</span> Freq,</span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>            <span class="at">num_stats =</span> NumSats,</span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>            <span class="at">dop =</span> Dop,</span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>            <span class="at">dim =</span> Dimension,</span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a>            <span class="at">proj =</span> ProjectName)</span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;Done&quot;</span>, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(df)</span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>So now all I need to do is load my raw data and immediately pipe it into this formatting function.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>all_dat <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">&quot;Data/GPS/all_data.rds&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">base_format</span>()</span></code></pre></div>
+</div>
+<div id="sort-into-different-datasets" class="section level3" number="3.2.2">
+<h3 number="3.2.2"><span class="header-section-number">3.2.2</span> Sort into Different Datasets</h3>
+<p>Now I can begin to sort into the different datasets for my final database structure
+<br></p>
+<div id="individuals-dataset" class="section level4" number="3.2.2.1">
+<h4 number="3.2.2.1"><span class="header-section-number">3.2.2.1</span> Individuals Dataset</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>indiv <span class="ot">&lt;-</span> all_dat <span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(animal_id, </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>           species, </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>           sex, </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>           cohort, </span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>           birth_year, </span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>           capture_unit)</span></code></pre></div>
+<p>This table now shows the individual animals and their sex, species, birth year, and the management unit where they were captured.</p>
+</div>
+<div id="collar-deployment-dataset" class="section level4" number="3.2.2.2">
+<h4 number="3.2.2.2"><span class="header-section-number">3.2.2.2</span> Collar Deployment Dataset</h4>
+<p>This table will show the animals with their collars. Because some collars were used on more than one individual or an individual had more than one collar, I need to add a start and end date of when these animals had their specific collars.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>collar_deploy <span class="ot">&lt;-</span> all_dat <span class="sc">%&gt;%</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(animal_id, collar_id) <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">start =</span> <span class="fu">min</span>(datetime),</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">end =</span> <span class="fu">max</span>(datetime)) <span class="sc">%&gt;%</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(animal_id, collar_id, start, end)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># create deployment ID</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>deploy_id <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(collar_deploy))</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>collar_deploy <span class="ot">&lt;-</span> <span class="fu">cbind</span>(deploy_id, collar_deploy)</span></code></pre></div>
+</div>
+<div id="location-dataset" class="section level4" number="3.2.2.3">
+<h4 number="3.2.2.3"><span class="header-section-number">3.2.2.3</span> Location Dataset</h4>
+<p>For the Location datset, I also need to add a column for UTM x and UTM y. My study area is in Utah, which is UTM Zone 12N. To convert to UTM, I need to use the package <code>sf</code>. I also want to make sure I don’t have any datapoints outside of Utah, so I need the package <code>maps</code> to generate a <code>sf</code> object of Utah.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;sf&quot;</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;maps&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(maps)</span></code></pre></div>
+<p>To make the conversion and clipping easier, I’ll create a function to convert given latitude and longitude coordinates to UTM and to check if these coordinates are within Utah.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>convert_utm <span class="ot">&lt;-</span> <span class="cf">function</span>(latlon_df){</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  utm_df <span class="ot">&lt;-</span> latlon_df <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(loc_id, lat_y, lon_x) <span class="sc">%&gt;%</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># turns df into sf object with geometry</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    sf<span class="sc">::</span><span class="fu">st_as_sf</span>(<span class="at">coords =</span> <span class="fu">c</span>(<span class="st">&quot;lon_x&quot;</span>, <span class="st">&quot;lat_y&quot;</span>),</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">crs =</span> <span class="dv">4326</span>) <span class="sc">%&gt;%</span> <span class="co"># WGS84 = EPSG 4326</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># converts geometry to UTM 12N projection </span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    sf<span class="sc">::</span><span class="fu">st_transform</span>(<span class="at">crs =</span> <span class="dv">32612</span>) <span class="sc">%&gt;%</span> <span class="co"># UTM 12N = EPSG 32612</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># creates a new column of x and y UTM 12N coordinates</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">utm_x =</span> sf<span class="sc">::</span><span class="fu">st_coordinates</span>(.)[, <span class="dv">1</span>],</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>           <span class="at">utm_y =</span> sf<span class="sc">::</span><span class="fu">st_coordinates</span>(.)[, <span class="dv">2</span>]) <span class="sc">%&gt;%</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># drops geometry column</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    sf<span class="sc">::</span><span class="fu">st_drop_geometry</span>()</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> latlon_df <span class="sc">%&gt;%</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">left_join</span>(utm_df, <span class="at">by =</span> <span class="st">&quot;loc_id&quot;</span>)</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(df)</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>clip_to_ut <span class="ot">&lt;-</span> <span class="cf">function</span>(df){</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  df_sf <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># transforms into sf object (WGS84 = EPSG 4326 )</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">st_as_sf</span>(<span class="at">coords =</span> <span class="fu">c</span>(<span class="st">&quot;lon_x&quot;</span>, <span class="st">&quot;lat_y&quot;</span>), <span class="at">crs =</span> <span class="dv">4326</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(loc_id, geometry)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># load obj of usa from package &quot;maps&quot;</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  usa <span class="ot">&lt;-</span> maps<span class="sc">::</span><span class="fu">map</span>(<span class="st">&quot;state&quot;</span>, <span class="at">plot =</span> F, <span class="at">fill =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># turn into sf obj</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">st_as_sf</span>()</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  utah <span class="ot">&lt;-</span> usa <span class="sc">%&gt;%</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># finds the centroid</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">st_centroid</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># pulls out the coordinates</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">st_coordinates</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># binds x and y coordinates so they can be their own column in &quot;usa&quot;</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cbind</span>(usa) <span class="sc">%&gt;%</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># pull out utah </span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(ID <span class="sc">==</span> <span class="st">&quot;utah&quot;</span>)</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>  <span class="co"># makes a new column called &quot;indicator&quot; which makes TRUE or FALSE if the point</span></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>  <span class="co">#   falls within Utah</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>  df_sf<span class="sc">$</span>indicator <span class="ot">&lt;-</span> <span class="fu">st_within</span>(df_sf, utah) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>    lengths <span class="sc">&gt;</span> <span class="dv">0</span></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>  <span class="co"># join with original dataframe</span></span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> <span class="fu">left_join</span>(df, df_sf, <span class="at">by =</span> <span class="st">&quot;loc_id&quot;</span>)</span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>  <span class="co"># pull out just the rows that are indicated as TRUE, meaning they are inside</span></span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>  <span class="co">#   Utah</span></span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>  df_clip <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">subset</span>(df<span class="sc">$</span>indicator <span class="sc">==</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a>    <span class="co"># drop indicator and geometry columns</span></span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span>indicator) <span class="sc">%&gt;%</span></span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span>geometry)</span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(df_clip)</span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Now I just need to pipe the data through these functions.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>loc <span class="ot">&lt;-</span> all_dat <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">loc_id =</span> <span class="fu">seq</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(all_dat))) <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(loc_id, animal_id, datetime, lat_y, lon_x) <span class="sc">%&gt;%</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">convert_utm</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clip_to_ut</span>()</span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="rsqlite" class="section level2" number="3.3">
+<h2 number="3.3"><span class="header-section-number">3.3</span> RSQLite</h2>
+<p>Now that I’ve formatted all my datasets, it’s time to put them together in a database.</p>
+<p>To form this database, I will be working in with the package <code>RSQLite</code></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install Packages</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;RSQLite&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load Packages</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DBI)</span></code></pre></div>
+<p>Once the package is installed and loaded, I can begin working in RSQLite. First, I need to create the database.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Establish Database Connection</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>db <span class="ot">=</span> <span class="fu">dbConnect</span>(<span class="at">drv =</span> RSQLite<span class="sc">::</span><span class="fu">SQLite</span>(), <span class="st">&quot;Data/barrier_proj.db&quot;</span>)</span></code></pre></div>
+<p>Then, I need to create the tables for all of my datasets. I need to create the <code>individuals</code> table first because it has no foreign key but its primary key (<code>animal_id</code>) is a foreign key for the other tables.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dbExecute</span>(db, </span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;CREATE TABLE individuals(</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="st">          animal_id char(9) NOT NULL PRIMARY KEY,</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="st">          species char(8), </span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="st">          sex char(1) CHECK (sex IN (&#39;M&#39;, &#39;F&#39;, &#39;U&#39;)),</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="st">          cohort varchar(10),</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="st">          birth_year integer,</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="st">          capture_unit varchar(20)</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="st">          );&quot;</span>)</span></code></pre></div>
+<p>I made <code>animal_id</code> of class <code>char</code> instead of <code>varchar</code> because every ID follows the same format: SPYYSXXXX</p>
+<ul>
+<li>SP = species abbreviation (MD or PR)</li>
+<li>YY = year captured</li>
+<li>S = sex</li>
+<li>XXXX = incremental unit</li>
+</ul>
+<p>For example, the 10th female mule deer captured in 2017 would have an id MD17F0010</p>
+<p>Fortunately, both “pronghorn” and “mule deer” have the same number of characters (8), so I can make <code>species</code> a <code>char</code> class instead of <code>varchar</code>.</p>
+<p>Let’s check that the table was built ok. Since I didn’t put any data yet, it should be empty.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dbGetQuery</span>(<span class="at">conn =</span> db, <span class="at">statement =</span> <span class="st">&quot;SELECT * FROM individuals;&quot;</span>)</span></code></pre></div>
+<p>Awesome! Now I can create the other tables that use <code>animal_id</code> as a foreign key.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dbExecute</span>(db, </span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;CREATE TABLE collar_deploy(</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="st">          deploy_id integer NOT NULL PRIMARY KEY,</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="st">          collar_id integer,</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="st">          animal_id char(9), </span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="st">          start text,</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="st">          end text,</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="st">          FOREIGN KEY (animal_id) REFERENCES individuals(animal_id)</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="st">          );&quot;</span>)</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="fu">dbExecute</span>(db, </span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;CREATE TABLE location(</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a><span class="st">          loc_id integer NOT NULL PRIMARY KEY,</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a><span class="st">          animal_id char(9),</span></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a><span class="st">          datetime text,</span></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a><span class="st">          lat_y double, </span></span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a><span class="st">          lon_x double,</span></span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a><span class="st">          utm_x double,</span></span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a><span class="st">          utm_y double,</span></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a><span class="st">          FOREIGN KEY (animal_id) REFERENCES individuals(animal_id)</span></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a><span class="st">          );&quot;</span>)</span></code></pre></div>
+<p>After the tables are created, all I need to do is import the data into the database.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dbWriteTable</span>(db, <span class="st">&quot;individuals&quot;</span>, indiv, <span class="at">append =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">dbWriteTable</span>(db, <span class="st">&quot;collar_deploy&quot;</span>, collar, <span class="at">append =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="fu">dbWriteTable</span>(db, <span class="st">&quot;location&quot;</span>, loc, <span class="at">append =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="sc">&lt;!--</span>chapter<span class="sc">:</span>end<span class="sc">:</span><span class="dv">02</span><span class="sc">-</span>structure.Rmd<span class="sc">-</span><span class="ot">-&gt;</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Home Range Visualization {#hr_viz}</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>Placeholder</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a><span class="do">## LoCoH Home Ranges</span></span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a><span class="do">### Research Questions</span></span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a><span class="do">### Objectives</span></span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a><span class="do">## Set Up</span></span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a><span class="do">## LoCoH Home Range for One Season</span></span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a><span class="do">### Delineate Seasonal LoCoH Hull</span></span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a><span class="do">### Plot Home Range</span></span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a><span class="do">## LoCoH Home Range for all seasons in all years</span></span>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a><span class="do">### Home Range Area</span></span>
+<span id="cb18-24"><a href="#cb18-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-25"><a href="#cb18-25" aria-hidden="true" tabindex="-1"></a><span class="sc">&lt;!--</span>chapter<span class="sc">:</span>end<span class="sc">:</span><span class="dv">03</span><span class="sc">-</span>hr<span class="sc">-</span>viz.Rmd<span class="sc">-</span><span class="ot">-&gt;</span></span></code></pre></div>
+</div>
+</div>
+<!--bookdown:body:end-->
+            </section>
+
+          </div>
+        </div>
+      </div>
+<!--bookdown:link_prev-->
+<!--bookdown:link_next-->
+    </div>
+  </div>
+<!--bookdown:config-->
+
+</body>
+
+</html>

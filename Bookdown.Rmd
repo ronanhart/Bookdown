@@ -1,3 +1,55 @@
+--- 
+title: "Master's Thesis Research"
+author: "Ronan Hart"
+date: "2021-04-26"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "A recording of Ronan Hart's master's thesis project, from data collection to data analysis."
+---
+--- 
+title: "Master's Thesis Research"
+author: "Ronan Hart"
+date: "2021-04-26"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "A recording of Ronan Hart's master's thesis project, from data collection to data analysis."
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+<p style = "font-weight: 600; font-size: 24px"> Quantifying the Impacts of Anthropogenic Movement Barriers on Ungulate Space-Use Patterns and Functional Connectivity in Utah</p>
+<br>
+  
+## Project Outline
+
+* [Chapter 2][Project Overview]: Project Overview
+* [Chapter 3][Database Structure]: Database Structure
+* [Chapter 4][Home Range Visualization]: Delineate and Visualize Home Ranges
+
+<!--chapter:end:index.Rmd-->
+
+
+# Project Overview {#overview}
+
+Placeholder
+
+
+## Abstract
+## Research Question
+## Objectives
+## Hypotheses and Predictions
+
+<!--chapter:end:01-overview.Rmd-->
+
 # Database Structure {#db_structure}
 
 ## Database Structure
@@ -332,3 +384,24 @@ dbWriteTable(db, "individuals", indiv, append = TRUE)
 dbWriteTable(db, "collar_deploy", collar, append = TRUE)
 
 dbWriteTable(db, "location", loc, append = TRUE)
+
+<!--chapter:end:02-structure.Rmd-->
+
+
+# Home Range Visualization {#hr_viz}
+
+Placeholder
+
+
+## LoCoH Home Ranges
+### Research Questions
+### Objectives
+## Set Up
+## LoCoH Home Range for One Season
+### Delineate Seasonal LoCoH Hull
+### Plot Home Range
+## LoCoH Home Range for all seasons in all years
+### Home Range Area
+
+<!--chapter:end:03-hr-viz.Rmd-->
+
